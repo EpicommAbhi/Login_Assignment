@@ -1,24 +1,230 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="W5w-Hk-Gcv">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Log In-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iQU-QV-10C">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vHi-R0-3B3">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jQM-d8-kfi">
+                                                <rect key="frame" x="0.0" y="70" width="320" height="100"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jsa-m3-e8l">
+                                                        <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="516-0b-OHF">
+                                                                <variation key="heightClass=compact-widthClass=compact" constant="50"/>
+                                                                <variation key="heightClass=compact-widthClass=regular" constant="50"/>
+                                                                <variation key="heightClass=regular-widthClass=compact" constant="50"/>
+                                                                <variation key="heightClass=regular-widthClass=regular" constant="50"/>
+                                                            </constraint>
+                                                        </constraints>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="BYZ-38-t0r" id="AWy-a7-wgU"/>
+                                                        </connections>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lWK-2T-hRL">
+                                                        <rect key="frame" x="0.0" y="51" width="320" height="51"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="51" id="v5d-bo-UxM">
+                                                                <variation key="heightClass=compact-widthClass=compact" constant="51"/>
+                                                                <variation key="heightClass=compact-widthClass=regular" constant="51"/>
+                                                                <variation key="heightClass=regular-widthClass=compact" constant="51"/>
+                                                                <variation key="heightClass=regular-widthClass=regular" constant="51"/>
+                                                            </constraint>
+                                                        </constraints>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="BYZ-38-t0r" id="6R7-VX-bJx"/>
+                                                        </connections>
+                                                    </textField>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="69p-ZW-Age">
+                                                        <variation key="heightClass=compact-widthClass=compact" constant="100"/>
+                                                        <variation key="heightClass=compact-widthClass=regular" constant="100"/>
+                                                        <variation key="heightClass=regular-widthClass=compact" constant="100"/>
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="100"/>
+                                                    </constraint>
+                                                    <constraint firstAttribute="trailing" secondItem="lWK-2T-hRL" secondAttribute="trailing" id="8i2-c5-Fcp">
+                                                        <variation key="heightClass=compact-widthClass=compact" constant="0.0"/>
+                                                        <variation key="heightClass=compact-widthClass=regular" constant="0.0"/>
+                                                        <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="0.0"/>
+                                                    </constraint>
+                                                    <constraint firstItem="lWK-2T-hRL" firstAttribute="leading" secondItem="jQM-d8-kfi" secondAttribute="leading" id="BIe-UZ-Wlx"/>
+                                                    <constraint firstItem="lWK-2T-hRL" firstAttribute="top" secondItem="Jsa-m3-e8l" secondAttribute="bottom" constant="1" id="NVt-pO-0Hq"/>
+                                                    <constraint firstItem="Jsa-m3-e8l" firstAttribute="leading" secondItem="jQM-d8-kfi" secondAttribute="leading" id="hzo-xB-8yn"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Jsa-m3-e8l" secondAttribute="trailing" id="wra-ey-ikK">
+                                                        <variation key="heightClass=compact-widthClass=compact" constant="0.0"/>
+                                                        <variation key="heightClass=compact-widthClass=regular" constant="0.0"/>
+                                                        <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="0.0"/>
+                                                    </constraint>
+                                                    <constraint firstAttribute="bottom" secondItem="lWK-2T-hRL" secondAttribute="bottom" constant="-2" id="xsG-9v-VIx"/>
+                                                    <constraint firstItem="Jsa-m3-e8l" firstAttribute="top" secondItem="jQM-d8-kfi" secondAttribute="top" id="zGL-Kx-iKv"/>
+                                                </constraints>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1oO-Cg-TSx">
+                                                <rect key="frame" x="50" y="210" width="220" height="45"/>
+                                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="45" id="SIP-rc-I8I">
+                                                        <variation key="heightClass=compact-widthClass=compact" constant="45"/>
+                                                        <variation key="heightClass=compact-widthClass=regular" constant="45"/>
+                                                        <variation key="heightClass=regular-widthClass=compact" constant="45"/>
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="60"/>
+                                                    </constraint>
+                                                </constraints>
+                                                <state key="normal" title="Log In">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forgot Password?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xjX-Kx-ebD">
+                                                <rect key="frame" x="50" y="300" width="220" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="f0B-4V-PVC">
+                                                        <variation key="heightClass=compact-widthClass=compact" constant="21"/>
+                                                        <variation key="heightClass=compact-widthClass=regular" constant="21"/>
+                                                        <variation key="heightClass=regular-widthClass=compact" constant="21"/>
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="45"/>
+                                                    </constraint>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="xjX-Kx-ebD" firstAttribute="leading" secondItem="vHi-R0-3B3" secondAttribute="leading" constant="50" id="QNf-j2-fDO">
+                                                <variation key="heightClass=compact-widthClass=compact" constant="150"/>
+                                                <variation key="heightClass=compact-widthClass=regular" constant="50"/>
+                                                <variation key="heightClass=regular-widthClass=compact" constant="50"/>
+                                                <variation key="heightClass=regular-widthClass=regular" constant="200"/>
+                                            </constraint>
+                                            <constraint firstAttribute="trailing" secondItem="jQM-d8-kfi" secondAttribute="trailing" id="Y5R-bs-WVz">
+                                                <variation key="heightClass=compact-widthClass=compact" constant="0.0"/>
+                                                <variation key="heightClass=compact-widthClass=regular" constant="0.0"/>
+                                                <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                                                <variation key="heightClass=regular-widthClass=regular" constant="0.0"/>
+                                            </constraint>
+                                            <constraint firstItem="1oO-Cg-TSx" firstAttribute="top" secondItem="jQM-d8-kfi" secondAttribute="bottom" constant="40" id="YzL-e3-GxX">
+                                                <variation key="heightClass=compact-widthClass=compact" constant="30"/>
+                                                <variation key="heightClass=compact-widthClass=regular" constant="40"/>
+                                                <variation key="heightClass=regular-widthClass=compact" constant="40"/>
+                                                <variation key="heightClass=regular-widthClass=regular" constant="80"/>
+                                            </constraint>
+                                            <constraint firstItem="1oO-Cg-TSx" firstAttribute="leading" secondItem="vHi-R0-3B3" secondAttribute="leading" constant="50" id="cGH-RH-NmN">
+                                                <variation key="heightClass=compact-widthClass=compact" constant="170"/>
+                                                <variation key="heightClass=compact-widthClass=regular" constant="110"/>
+                                                <variation key="heightClass=regular-widthClass=compact" constant="50"/>
+                                                <variation key="heightClass=regular-widthClass=regular" constant="250"/>
+                                            </constraint>
+                                            <constraint firstItem="xjX-Kx-ebD" firstAttribute="top" secondItem="1oO-Cg-TSx" secondAttribute="bottom" constant="45" id="fGd-7G-cY0">
+                                                <variation key="heightClass=compact-widthClass=compact" constant="30"/>
+                                                <variation key="heightClass=compact-widthClass=regular" constant="45"/>
+                                                <variation key="heightClass=regular-widthClass=compact" constant="45"/>
+                                                <variation key="heightClass=regular-widthClass=regular" constant="45"/>
+                                            </constraint>
+                                            <constraint firstItem="jQM-d8-kfi" firstAttribute="top" secondItem="vHi-R0-3B3" secondAttribute="top" constant="120" id="hJ2-ks-xz1">
+                                                <variation key="heightClass=compact-widthClass=compact" constant="50"/>
+                                                <variation key="heightClass=compact-widthClass=regular" constant="120"/>
+                                                <variation key="heightClass=regular-widthClass=compact" constant="70"/>
+                                                <variation key="heightClass=regular-widthClass=regular" constant="120"/>
+                                            </constraint>
+                                            <constraint firstAttribute="trailing" secondItem="xjX-Kx-ebD" secondAttribute="trailing" constant="50" id="kHW-B8-LOs">
+                                                <variation key="heightClass=compact-widthClass=compact" constant="150"/>
+                                                <variation key="heightClass=compact-widthClass=regular" constant="50"/>
+                                                <variation key="heightClass=regular-widthClass=compact" constant="50"/>
+                                                <variation key="heightClass=regular-widthClass=regular" constant="200"/>
+                                            </constraint>
+                                            <constraint firstItem="jQM-d8-kfi" firstAttribute="leading" secondItem="vHi-R0-3B3" secondAttribute="leading" id="oSr-0b-w55"/>
+                                            <constraint firstAttribute="trailing" secondItem="1oO-Cg-TSx" secondAttribute="trailing" constant="50" id="qa7-8B-t7n">
+                                                <variation key="heightClass=compact-widthClass=compact" constant="170"/>
+                                                <variation key="heightClass=compact-widthClass=regular" constant="110"/>
+                                                <variation key="heightClass=regular-widthClass=compact" constant="50"/>
+                                                <variation key="heightClass=regular-widthClass=regular" constant="250"/>
+                                            </constraint>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="vHi-R0-3B3" secondAttribute="bottom" id="0tH-zc-llp"/>
+                                    <constraint firstItem="vHi-R0-3B3" firstAttribute="leading" secondItem="iQU-QV-10C" secondAttribute="leading" id="4xI-Wn-dm4"/>
+                                    <constraint firstItem="vHi-R0-3B3" firstAttribute="top" secondItem="iQU-QV-10C" secondAttribute="top" id="ofC-VU-hzy"/>
+                                    <constraint firstAttribute="trailing" secondItem="vHi-R0-3B3" secondAttribute="trailing" id="vLx-Y9-WdC"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="iQU-QV-10C" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="7eE-Ya-Rkk"/>
+                            <constraint firstItem="vHi-R0-3B3" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" priority="250" id="C2H-4V-cuv"/>
+                            <constraint firstItem="iQU-QV-10C" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="GHP-6C-6HY"/>
+                            <constraint firstItem="iQU-QV-10C" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="OYK-o3-UJH"/>
+                            <constraint firstItem="vHi-R0-3B3" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="Yb5-Yb-ozJ"/>
+                            <constraint firstItem="iQU-QV-10C" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="wze-Eq-qJo"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Log In" id="tNj-Yi-101"/>
+                    <connections>
+                        <outlet property="btnLogin" destination="1oO-Cg-TSx" id="CCi-yy-p74"/>
+                        <outlet property="lblForgotPassword" destination="xjX-Kx-ebD" id="j1K-wI-ufY"/>
+                        <outlet property="txtEmail" destination="Jsa-m3-e8l" id="p6N-0P-ZU3"/>
+                        <outlet property="txtPassword" destination="lWK-2T-hRL" id="NTQ-XG-P94"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="455.17241379310349" y="114.40000000000001"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="N1v-Eu-1ND">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="W5w-Hk-Gcv" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="TMF-BA-Lm2">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.85882352941176465" green="0.16078431372549018" blue="0.12941176470588234" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="uaN-jE-g0i"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TFd-1I-wWK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-778" y="86"/>
         </scene>
     </scenes>
 </document>

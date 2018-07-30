@@ -15,6 +15,7 @@
 		33403435210F138200F29652 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 33403434210F138200F29652 /* main.m */; };
 		3340343F210F138200F29652 /* Login_AssignmentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3340343E210F138200F29652 /* Login_AssignmentTests.m */; };
 		3340344A210F138200F29652 /* Login_AssignmentUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 33403449210F138200F29652 /* Login_AssignmentUITests.m */; };
+		33F604B4210F2B3900A4BD80 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 33F604B6210F2B3900A4BD80 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,10 @@
 		33403445210F138200F29652 /* Login_AssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Login_AssignmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		33403449210F138200F29652 /* Login_AssignmentUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Login_AssignmentUITests.m; sourceTree = "<group>"; };
 		3340344B210F138200F29652 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33F604B1210F2AA300A4BD80 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		33F604B7210F2B3B00A4BD80 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		33F604B8210F2B5400A4BD80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		33F604BB210F4D3200A4BD80 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +115,7 @@
 				33403430210F138200F29652 /* LaunchScreen.storyboard */,
 				33403433210F138200F29652 /* Info.plist */,
 				33403434210F138200F29652 /* main.m */,
+				33F604B6210F2B3900A4BD80 /* Localizable.strings */,
 			);
 			path = Login_Assignment;
 			sourceTree = "<group>";
@@ -199,16 +205,16 @@
 				TargetAttributes = {
 					33403421210F138200F29652 = {
 						CreatedOnToolsVersion = 9.0;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					33403439210F138200F29652 = {
 						CreatedOnToolsVersion = 9.0;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 						TestTargetID = 33403421210F138200F29652;
 					};
 					33403444210F138200F29652 = {
 						CreatedOnToolsVersion = 9.0;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 						TestTargetID = 33403421210F138200F29652;
 					};
 				};
@@ -220,6 +226,7 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = 33403419210F138200F29652;
 			productRefGroup = 33403423210F138200F29652 /* Products */;
@@ -241,6 +248,7 @@
 				33403432210F138200F29652 /* LaunchScreen.storyboard in Resources */,
 				3340342F210F138200F29652 /* Assets.xcassets in Resources */,
 				3340342D210F138200F29652 /* Main.storyboard in Resources */,
+				33F604B4210F2B3900A4BD80 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +315,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				3340342C210F138200F29652 /* Base */,
+				33F604BB210F4D3200A4BD80 /* es */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -315,8 +324,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				33403431210F138200F29652 /* Base */,
+				33F604B1210F2AA300A4BD80 /* es */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		33F604B6210F2B3900A4BD80 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				33F604B7210F2B3B00A4BD80 /* es */,
+				33F604B8210F2B5400A4BD80 /* Base */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -326,6 +345,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -381,6 +401,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -430,11 +451,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Login_Assignment/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "abhi.org.Login-Assignment";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -443,11 +466,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Login_Assignment/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "abhi.org.Login-Assignment";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -456,11 +481,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Login_AssignmentTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "abhi.org.Login-AssignmentTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Login_Assignment.app/Login_Assignment";
 			};
@@ -470,11 +497,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Login_AssignmentTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "abhi.org.Login-AssignmentTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Login_Assignment.app/Login_Assignment";
 			};
@@ -483,11 +512,13 @@
 		33403455210F138200F29652 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Login_AssignmentUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "abhi.org.Login-AssignmentUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Login_Assignment;
 			};
@@ -496,11 +527,13 @@
 		33403456210F138200F29652 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Login_AssignmentUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "abhi.org.Login-AssignmentUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Login_Assignment;
 			};

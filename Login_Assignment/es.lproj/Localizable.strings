@@ -1,0 +1,13 @@
+/* 
+  Login_Translate.strings
+  Login_Assignment
+
+  Created by Abhijeetk on 7/30/18.
+  Copyright © 2018 Abhijeetk. All rights reserved.
+*/
+"Email id Alert"="Por favor ingrese la ID de correo electrónico ...";
+"Password  Alert"="Por favor, ingrese contraseña...";
+"Successfull Alert"="Inicio de sesión correcto";
+"Login"="Iniciar sesión";
+"Ok"="De acuerdo";
+

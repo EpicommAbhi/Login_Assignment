@@ -1,0 +1,16 @@
+
+
+/* Class = "UIButton"; normalTitle = "Log In"; ObjectID = "1oO-Cg-TSx"; */
+"1oO-Cg-TSx.normalTitle" = "iniciar sesión";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "Jsa-m3-e8l"; */
+"Jsa-m3-e8l.placeholder" = "correo electrónico";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "lWK-2T-hRL"; */
+"lWK-2T-hRL.placeholder" = "contraseña";
+
+/* Class = "UINavigationItem"; title = "Log In"; ObjectID = "tNj-Yi-101"; */
+"tNj-Yi-101.title" = "Iniciar sesión";
+
+/* Class = "UILabel"; text = "Forgot Password?"; ObjectID = "xjX-Kx-ebD"; */
+"xjX-Kx-ebD.text" = "¿Se te olvidó tu contraseña?";
